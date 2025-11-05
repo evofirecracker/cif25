@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Page layout */
+        body {
+            background-color: red;
+            color: white;
+            font-family: Helvetica, sans-serif;
+            min-height: 100vh; /* allow scrolling */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 8vh;
+        }
+
+        /* Hero container stacks title and button */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6em;
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+            padding: 2px;
+        }
+
+        .big-title {
+            font-size: 300px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 0.8;
+            margin: 0;
+        }
+        /* Spacer pushes the button below the fold */
+        .spacer {
+            height: 200vh; /* large enough to make the button off-screen initially */
+            width: 100%;
+        }
+
+        .btn-typographic {
+            background: transparent;
+            border: none;
+            color: inherit;
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            cursor: pointer;
+            padding: 0.1em 0.2em;
+            margin-top: 0.2em;
+            margin-bottom: 2rem;
+        }
+
+        .btn-typographic:hover { opacity: 0.85; color:black;}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <span class="big-title">
+            <span id="hello-word" style="cursor:pointer;">HELLO</span>
+            <span>WORLD</span>
+        </span>
+
+        <div class="spacer" aria-hidden="true"></div>
+
+        <a href="entry1_3.html" class="btn-typographic">LEARN MORE</a>
+    </div>
+
+    <script>
+        const helloSpan = document.getElementById('hello-word');
+        helloSpan.addEventListener('mouseenter', function() {
+            helloSpan.textContent = 'NO MANS';
+            document.body.style.backgroundColor = '#222'
+            document.body.style.color = 'red';
+        });
+        helloSpan.addEventListener('mouseleave', function() {
+            helloSpan.textContent = 'HELLO';
+            document.body.style.backgroundColor = 'red';
+            document.body.style.color = 'white';
+        });
+    </script>
+
+</body>
+</html>

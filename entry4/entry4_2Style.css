@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         /* include padding in width */
+}
+
+
+.background {
+    background-color: rgb(255, 255, 255);      /* fallback color */
+    background-size: cover;           /* fill the viewport while preserving aspect */
+    background-position: center;      /* center the focal point */
+    background-repeat: no-repeat;
+    position: fixed;
+    inset: 0;                         /* cover the entire viewport */
+    z-index: -1;  
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.btn{
+    flex:1;
+    border:none;
+    color:rgb(255, 255, 255);
+    background-color: green;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2 ease;
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+.btn:hover{
+    background-color: darkgreen;
+}

@@ -1,0 +1,92 @@
+
+CSS
+* {
+  margin: -1vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: sans-serif;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #333; 
+  color: white; 
+  padding: 1rem; 
+  text-align: center; 
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px; 
+  background-color: blueviolet;
+  padding: 1rem;
+}
+
+.main {
+  flex: 1;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+footer {
+  background-color: lime;
+}
+
+
+@media (max-width: 650px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

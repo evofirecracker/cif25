@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         /* include padding in width */
+}
+
+@font-face {
+    font-family: "HyperMedium"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/font/00HypertextDisplayNon-Commercial-Medium.woff) format("woff2");
+}
+@font-face {
+    font-family: "HyperRegular"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/font/00HypertextDisplayNon-Commercial-Regular.woff) format("woff2");
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: column;
+    background-color:rgb(255, 255, 255);
+    flex-direction: row;
+    z-index: -1;
+}
+
+.navigation{
+    display:flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-between;
+
+
+}
+
+.navtitle{
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    margin-left: 15px;
+    display: flex;
+}
+
+.btn{
+    display:flex;
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.title{
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 130px;
+    color: #000000;
+    margin:0;
+}
+
+.subtitle{
+    font-family: 'HyperRegular', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin:0;
+    margin-right: 30 px;
+}
+
+.gallery{
+    display:flex;
+    height: 400vh;
+}
+
+.imgcontainer{
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 270px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--row-height,);
+    gap: var(--gap);
+
+}
+
+
+.box{
+    background-color: red;
+    flex-wrap: wrap;
+}
+
+.pic{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+

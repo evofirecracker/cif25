@@ -1,0 +1,110 @@
+.wrapper{
+    margin: -1vh;
+
+}
+
+.section{
+    display: flex;
+    flex-direction: column wrap;
+    min-height: 100vh;
+    justify-content: center;
+    margin: -1vh;
+}
+
+
+
+     /* include padding in height */
+
+.player{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    width: 250vh;
+    height:70vh;
+}
+.textbox{
+    display:flex;
+    background:rgb(0, 121, 0);
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    position:fixed;
+    width: 100vw;
+}
+
+
+   
+.enzo{
+    flex: 2;
+    background : rgb(255, 255, 255);
+    border: 10px solid rgb(255, 0, 0);
+    position: relative;
+    
+}
+
+.dario{
+    flex: 2;
+    background : rgb(255, 255, 255);
+    height: 100 px;
+    border: 10px solid rgb(255, 0, 0);
+}
+.andrey{
+    flex: 2;
+    background : rgb(255, 255, 255);
+    height: 100 px;
+    border: 10px solid rgb(255, 0, 0)
+}
+.moi{
+    flex: 2;
+    background : rgb(255, 255, 255);
+    height: 100 px;
+    border: 10px solid rgb(255, 0, 0)
+}
+.romeo{
+    flex: 2;
+    background : rgb(255, 255, 255);
+    height: 100 px;
+    border: 10px solid rgb(255, 0, 0)
+}
+
+.no1{
+    position: absolute;      /* position relative to .rob (which is already position: relative) */
+    transform-origin: center;
+}
+.rectangle-parent{
+    top: 40%;
+    left: 15%;
+    transform-origin: center;
+    scale: 1.6;
+
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 21px;
+  	border-radius: 20px 20px 0px 0px;
+  	background-color: #034694;
+  	width: 95px;
+  	height: 119px;
+}
+.group-item {
+  	position: absolute;
+  	top: 30.51px;
+  	left: 92px;
+  	background-color: #034694;
+  	width: 29px;
+  	height: 34px;
+  	transform:  rotate(-45deg);
+  	transform-origin: 0 0;
+}
+.group-inner {
+  	position: absolute;
+  	top: 10px;
+  	left: 24.04px;
+  	background-color: #034694;
+  	width: 29px;
+  	height: 34px;
+  	transform:  rotate(45deg);
+  	transform-origin: 0 0;
+}
+

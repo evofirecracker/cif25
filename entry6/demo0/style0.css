@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "GaisyerItalic"; /* This is an arbitrary name -- whatever works for you */
+    src: url() format("woff2");
+}
+  
+@font-face {
+    font-family: "GaisyerMono"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/entry5/font/ABCSynt-Book-Trial.woff) format("woff2");
+}
+  
+*{
+    font-family: sans-serif;
+    margin: 10px;
+}
+  
+h1{
+    font-family: "GaisyerMono", serif;
+  /*   font-size: 80px; */
+    font-size: 18vh;
+}
+  
+h3{
+    font-family: "GaisyerItalic", serif;
+  /*   font-size: 20px; */
+    font-size: 8vh;
+}
+  
+p{
+    font-family: "GaisyerItalic", serif;
+  /*   font-size: 30px; */
+    font-size: 4vh;
+    line-height: 1.5;
+}
+  
+.poem {
+    border-style: dotted;
+    border-width: 7px;
+    padding: 50px;
+}
+  
+  
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.flex-container > div {
+    width: 100%;
+    text-align: left;
+    line-height: 1.4;
+  
+}

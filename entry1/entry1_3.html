@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: '#222';
+            color: white;
+            font-family: Helvetica, sans-serif;
+            min-height: 100vh; /* allow scrolling */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 8vh;
+        }
+        .big-title {
+            font-size: 150px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 0.8;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        alert("Are you SURE??????????");
+    </script>
+    <script>
+        setInterval(()=>{ 
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+            document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+            }
+        , 150);
+    </script>
+    <div class="hero">
+        <span class ="big-title">
+            <span id = "y">YOU</span>
+            <span id = "re">ARE</span>
+            <span id = "nt">NOT</span>
+            <span id = "rdy" style = "cursor:pointer;">READY</span>
+        </span>
+       
+       
+       <script>
+            const rd1 = document.getElementById('rdy');
+            const nt1 = document.getElementById('nt');
+            const re1 = document.getElementById('re');
+            const y1 = document.getElementById('y');
+            rd1.addEventListener('mouseenter', function() {
+                nt1.textContent = 'ABSOLUTELY';
+                nt1.style.color = 'red';
+                re1.style.color = 'red';
+                y1.style.color = 'red';
+                rd1.style.color = 'red';   
+
+            });
+            rd1.addEventListener('mouseleave', function() {
+                nt1.textContent = 'NOT';
+                nt1.style.color = 'white';
+                re1.style.color = 'white';
+                y1.style.color = 'white';
+                rd1.style.color = 'white';
+            });
+        </script>
+    </div>
+</body>
+</html>
