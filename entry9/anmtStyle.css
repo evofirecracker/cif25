@@ -11,3 +11,17 @@
   align-items: center;
   height: 100vh;
 }
+
+
+
+@keyframes spinType {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
