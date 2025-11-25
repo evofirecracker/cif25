@@ -22,7 +22,7 @@
     z-index: -1;
 }
 
-.navigation{
+.navigationblack{
     display:flex;;
     position: fixed;
     width: 100%;
@@ -32,7 +32,7 @@
 
 }
 
-.navtitle{
+.navtitlewhite{
     font-family: 'HyperMedium', sans-serif;
     font-size: 32px;
     color: #ffffff;

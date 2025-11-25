@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;         /* include padding in width */
+    box-sizing: border-box;      
 }
 
 @font-face {
@@ -12,98 +12,69 @@
     font-family: "HyperRegular"; /* This is an arbitrary name -- whatever works for you */
     src: url(/font/00HypertextDisplayNon-Commercial-Regular.woff) format("woff2");
 }
+@font-face {
+    font-family: "FenulMedium"; /* This is an arbitrary name -- whatever works for you */
+    src: url(font/FenulStandard-TRIAL-Medium.woff2) format("woff2");
+}
 
 .wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: column;
     background-color:rgb(255, 255, 255);
     flex-direction: row;
     z-index: -1;
 }
 
-.navigation{
+.navigation10{
     display:flex;
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     justify-content: space-between;
-    margin-top: 20px;
-
-
+    background-color:white;
 }
 
-.navtitle{
+
+
+.navtitle10{
     font-family: 'HyperMedium', sans-serif;
     font-size: 32px;
     color: #000000;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
     display: flex;
 }
 
-.btn{
+.homebtn10{
     display:flex;
     font-family: 'HyperMedium', sans-serif;
     font-size: 32px;
     color: #000000;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
-.header{
+.introtextcontainer1{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;;
-    width: 100%;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+
+
 }
 
-.title{
-    font-family: 'HyperMedium', sans-serif;
-    font-size: 130px;
+.introheader1{
+    font-family: 'FenulMedium', serif;
+    font-size: 90px;
     color: #000000;
-    margin:0;
+    margin-bottom: 20px;
 }
 
-.subtitle{
+.introparagraph1{
     font-family: 'HyperRegular', sans-serif;
-    font-size: 40px;
+    font-size: 24px;
     color: #000000;
-    margin:0;
-    margin-right: 30 px;
+    width: 60%;
+    text-align: center;
 }
-
-.gallery{
-    display:flex;
-    height: 400vh;
-}
-
-.imgcontainer{
-    --gap: 16px;
-    --num-cols: 3;
-    --row-height: 270px;
-
-    box-sizing: border-box;
-    padding: var(--gap);
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols),1fr);
-    grid-auto-rows: var(--row-height,);
-    gap: var(--gap);
-
-}
-
-
-.box{
-    background-color: red;
-    flex-wrap: wrap;
-}
-
-.pic{
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-}
-
 
