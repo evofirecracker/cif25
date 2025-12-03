@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "HyperMedium"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/font/00HypertextDisplayNon-Commercial-Medium.woff) format("woff2");
+}
+@font-face {
+    font-family: "HyperRegular"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/font/00HypertextDisplayNon-Commercial-Regular.woff) format("woff2");
+}
+@font-face {
+    font-family: "FenulMedium"; /* This is an arbitrary name -- whatever works for you */
+    src: url(font/FenulStandard-TRIAL-Medium.woff2) format("woff2");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.wrapper11{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.navigation11{
+    display:flex;
+    width: 100%;
+    height: 7vh;
+    justify-content: space-between;
+}
+
+
+
+.navtitle11{
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 32px;
+    color: #00ff55;
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.homebtn11{
+    display:flex;
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 32px;
+    color: #00ff55;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.header11{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18vh;
+    border: 2px solid #00ff55;
+}
+
+.headingtext11{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 70px;
+    color: #00ff55;
+}
+
+
+.marketbody{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: calc(100vh - 7vh);
+}
+
+.playercontainer{
+    flex: 5;
+    display: flex;
+    color: #00ff55;
+    background-color: #000000;
+    border: 2px solid #00ff55;
+    flex-direction: column;
+}
+
+.box11{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    border: 2px solid #00ff55;
+}
+
+.btn11{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #00ff55;
+    background: transparent;
+    border-right: 2px solid #00ff55;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn11:hover{
+    background-color: #00ff55;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.playerinfoitem{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-left: 20px;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.playerinfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-left: 20px;
+    justify-content: center;
+
+}
+
+.value11{
+    color: #f2ff00;
+}
+
+.statuscontainer{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ff55;
+    background-color: #000000;
+    border: 2px solid #00ff55;
+}
+
+
+
+.playercontainer{
+    border-right: 2px solid #00ff55;
+}
+
+.statuscontainer{
+    border-left: 2px solid #00ff55;
+    display: flex;
+    flex-direction: column;
+}
+
+.walletcontainer{
+    width: 100%;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border:#00ff55 2px solid;
+
+}
+.wallettext11{
+    display:flex;
+}
+
+.walletamount11{
+    display:flex;
+    margin-left: 10px;
+    color: #f2ff00;
+}
+
+.basketcontainer{
+    width:100%;
+    height:80vh;
+    flex:10;
+    padding: 20px;
+    font-size: 40px;
+    border:#00ff55 2px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.totalcontainer{
+    width:100%;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border:#00ff55 2px solid;
+}
+
+.totalamount11{
+    display:flex;
+    margin-left: 10px;
+    color: #f2ff00;
+}
+
+.basketbuttoncontainer{
+    width:100%;
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:#00ff55 2px solid;
+}
+
+.clearbtn11, .confirmbtn11{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #00ff55;
+    background: transparent;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: 0px;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}

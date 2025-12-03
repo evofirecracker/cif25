@@ -18,7 +18,7 @@
 
 .wrapper {
   	width: 100%;
-  	height: 100%;
+  	height: 100vh;
   	background-color: #fff;
   	text-align: left;
   	font-size: 48px;
@@ -55,8 +55,9 @@
 
 
 .logocontainer{
-    width: 50 vh;
-    height: 10 vh;
+    width: 100%;
+    min-height: 80%;
+    flex: 1;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,8 +67,8 @@
 
 
 .logogif{
-    height: 50%;
-	width: 50%;
+    height: 25%;
+	width: 25%;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
@@ -92,38 +93,83 @@
 
 
 @media (max-width: 650px) {
-	.desktop{
-		height:800px;
+	html, body {
+		max-width: 650px;
+		width: 100%;
+		margin: 0 auto;
+		overflow-x: hidden;
 	}
-	
-	
-	.title {
-		font-size: 160px;
-		height:100px;
-		top:70px;
 
-		letter-spacing: -0.5rem;
-
-  	}
-	.logo {
-		width: 100px;
-		height: 100px;
-		top: 230px;
-
-  	}
-	.Btn{
-		font-size: 25px;
+	.wrapper {
+		max-width: 650px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 16px;
+	  	height: 100vh;
+		display: flex;
+		flex-direction: column;
+	  	background-color: #fff;
+	  	text-align: left;
+	  	font-size: 48px;
+	  	color: #000;
 	}
-	.buttonColumn{
-		top: 850px;
-		display:flex;
-		flex-direction: row;
+
+	.navbar{
+		width: 100%;
+		height: 10%;
+		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
 	}
 
-	
-	.slogan{
-		font-size: 30px;
-		top: 300px;
+	.navelements{
+		display:flex;
+		width: 100%;
+		justify-content: space-between;
+		padding: 0px 20px 0px 20px;
+	}
+
+	.btn{
+		font-family: 'HyperMedium', sans-serif;
+		font-size: 24px;
+		color: #000000;
+		text-decoration: none;
+		margin-right: 15px;
+		margin-top: 10px;
+		border: none;
+		background: none;
+	}
+
+	.logocontainer{
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logogif{
+	    height: 25%;
+		width: 25%;
+		margin-top: 5%;
+
+	}
+
+	.navbarlow{
+	    width: 100%;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: stretch;
+		flex-direction: column;
+		gap: 12px;
+		padding: 0px 20px 20px 20px;
+		height: auto;
+		margin-top: auto;
+	}
+
+	.navbarlow .btn{
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
 	}
 }
