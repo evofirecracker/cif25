@@ -49,7 +49,12 @@
 	margin-top: 10px;
 	border: none;
 	background: none;
+	cursor: pointer;
 
+}
+
+.btn:hover{
+	color: #DBA111;
 }
 
 
