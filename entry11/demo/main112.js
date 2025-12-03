@@ -10,3 +10,6 @@ function newColor() {
 }
 
 button.addEventListener("click", newColor);
+
+
+
