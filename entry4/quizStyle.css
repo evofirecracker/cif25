@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "HyperMedium"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/font/00HypertextDisplayNon-Commercial-Medium.woff) format("woff2");
+}
+@font-face {
+    font-family: "HyperRegular"; /* This is an arbitrary name -- whatever works for you */
+    src: url(/font/00HypertextDisplayNon-Commercial-Regular.woff) format("woff2");
+}
+@font-face {
+    font-family: "FenulMedium"; /* This is an arbitrary name -- whatever works for you */
+    src: url("../font/FenulStandard-TRIAL-Medium.woff2") format("woff2");
+}
+
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wrapper4{
+    width: 100vw;
+    min-height: 100vh; /* cover full page even when content grows */
+    display: column;
+    flex-direction: row;
+    z-index: -1;
+    margin:0;
+    background-color: #DBA111;
+    box-sizing: border-box;
+}
+
+.navigation4{
+    display:flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+}
+
+
+
+.navtitle4{
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.btn4{
+    display:flex;
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.home4{
+    margin-right: 15px;
+}
+
+.header4{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    padding-top: 40px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'HyperMedium', sans-serif;
+
+}
+
+.main4, .sub4{
+    font-size: 150px;
+    color: #000000;
+    margin: 0 20px;
+    display: flex;
+}
+
+.sub4{
+    font-size: 60px;
+    margin-top: -10px;
+}
+
+.headingtext4{
+    white-space: nowrap;
+}
+
+.btncontainer4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;    
+    margin-top: 100px;
+}
+
+.start4{
+    margin-top: 30px;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    background-color: #DBA111;
+    cursor: pointer;
+}
+
+.start4:hover{
+    background-color: #000000;
+    color: #DBA111;
+}
+
+
+.contentcontainer4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.q4number{
+    margin-right: 100px;
+}
+
+
+.questioncontainer4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 24px;
+}
+
+.answerscontainer4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.a4{
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    background-color: #DBA111;
+}
+.a4:hover{
+    background-color: #000000;
+    color: #DBA111;
+}

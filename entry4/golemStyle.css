@@ -1,0 +1,24 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.golem{
+    width: 100vw;
+    min-height: 100vh; /* cover full page even when content grows */
+    display: column;
+    flex-direction: row;
+    z-index: -1;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.buddy4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: auto;
+    color:red;
+    font-size: 25px;
+}
