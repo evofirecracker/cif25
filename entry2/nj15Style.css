@@ -1,0 +1,66 @@
+.njbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+    display: block;
+    animation: invertBg 2s steps(1, end) infinite alternate;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.nj-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'HyperMedium', sans-serif;
+    font-size: 60px;
+    color: #ff0000;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    padding: 10px 16px;
+    z-index: 2;
+    animation: bounceAround 4s ease-in-out infinite alternate;
+    white-space: nowrap;
+}
+
+@keyframes bounceAround{
+    0%   { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(-50%, -50%) translate(35vw, -22vh) rotate(0deg); }
+    50%  { transform: translate(-50%, -50%) translate(-32vw, -18vh) rotate(2160deg); } /* 6 spins */
+    75%  { transform: translate(-50%, -50%) translate(30vw, 24vh) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) translate(-28vw, 18vh) rotate(0deg); }
+}
+
+@keyframes invertBg{
+    0% { filter: invert(0); }
+    100% { filter: invert(1); }
+}
+
+.njnj{
+    position: absolute;
+    width: 320px;
+    max-width: 60vw;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: goCrazy 3s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4));
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes goCrazy{
+    0%   { transform: translate(-50%, 0) rotate(0deg) scale(1); }
+    15%  { transform: translate(-70%, -20vh) rotate(-18deg) scale(1.2); }
+    35%  { transform: translate(60%, -8vh) rotate(22deg) scale(0.9); }
+    55%  { transform: translate(-40%, 10vh) rotate(-28deg) scale(1.3); }
+    75%  { transform: translate(80%, -18vh) rotate(36deg) scale(0.95); }
+    100% { transform: translate(-50%, 0) rotate(0deg) scale(1); }
+}

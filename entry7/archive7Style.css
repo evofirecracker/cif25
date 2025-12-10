@@ -106,6 +106,29 @@
     object-fit: cover;
 }
 
+@media (max-width: 650px){
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .title{
+        font-size: 72px;
+    }
+
+    .subtitle{
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    .imgcontainer{
+        --num-cols: 1;
+        --row-height: 270px;
+        --gap: 12px;
+    }
+}
+
 .eighteen{
     font-family: 'HyperMedium', sans-serif;
     font-size: 32px;
@@ -115,5 +138,3 @@
     align-items: center;
 
 }
-
-

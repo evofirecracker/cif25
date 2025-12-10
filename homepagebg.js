@@ -4,7 +4,7 @@ const wrapper = document.querySelector(".wrapper");
 const logo = document.querySelector(".logogif");
 const buttons = document.querySelectorAll(".btn");
 
-let lastColor = null;
+let currentIndex = 3; // start on the last color in the list (white)
 
 function applyButtonColor(randColor) {
   if (!buttons.length) return;
@@ -21,13 +21,12 @@ function applyButtonColor(randColor) {
 
 function newColor() {
   if (!logo) return;
-  const randIndex = Math.floor(Math.random() * colors.length);
-  const randColor = colors[randIndex];
-  lastColor = randColor;
+  currentIndex = (currentIndex + 1) % colors.length;
+  const nextColor = colors[currentIndex];
 
-  if (body) body.style.backgroundColor = randColor;
-  if (wrapper) wrapper.style.backgroundColor = randColor;
-  applyButtonColor(randColor);
+  if (body) body.style.backgroundColor = nextColor;
+  if (wrapper) wrapper.style.backgroundColor = nextColor;
+  applyButtonColor(nextColor);
 }
 
 // Set initial state to white and ensure buttons are Chelsea blue on white.

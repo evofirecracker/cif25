@@ -58,12 +58,12 @@ body {
 }
 
 #yin-yang {
-  animation: yinyangSpin 5s ease-out infinite;
+  animation: yinyangSpin 2.5s ease-out infinite;
   height:500px;
 }
 
 #yin-yang path, #yin-yang circle {
-  animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+  animation: colorSwap 2.5s ease-in infinite alternate, fade 2.5s ease-in infinite alternate-reverse;
 }
 
 #yin-yang:hover {
@@ -73,5 +73,5 @@ body {
 
 /*basic animation, spins once in one second*/
 div.item {
-  animation: spinType 1s;
+  animation: spinType 0.5s;
 }

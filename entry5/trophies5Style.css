@@ -64,18 +64,36 @@ html, body{
     min-height: 100%;
     flex-direction: column;
     margin: 50px auto 0; /* top margin only affects cabinet container */
-    background-color:rgb(68, 26, 0);
+    background-color: rgb(68, 26, 0);
     box-sizing: border-box;
     padding-bottom: 60px;
 }
 
 .header5{
     font-family:'FenulMedium','serif';
-    color: #DBA111;
+    color: transparent;
     width: 100%;
     align-items: center;
     text-align: center;
     background-color: rgb(68, 26, 0);
+    position: relative;
+    padding: 32px 0 40px;
+    overflow: hidden;
+}
+
+.header5 h1{
+    font-size: 72px;
+    background: linear-gradient(120deg, #DBA111 0%, #ffffff 45%, #DBA111 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 18px;
 }
 
 .cabinet5{
