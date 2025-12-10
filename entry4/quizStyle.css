@@ -167,3 +167,48 @@ html, body{
     background-color: #000000;
     color: #DBA111;
 }
+
+@media (max-width: 650px){
+    .navigation4{
+        padding: 0 12px;
+        align-items: center;
+    }
+
+    .navtitle4,
+    .btn4{
+        font-size: 22px;
+        margin-top: 6px;
+    }
+
+    .header4{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .headingtext4{
+        white-space: normal;
+    }
+
+    .main4{
+        font-size: 58px;
+        line-height: 1.05;
+    }
+
+    .sub4{
+        font-size: 28px;
+        margin-top: 6px;
+    }
+
+    .btncontainer4{
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .start4{
+        font-size: 20px;
+        padding: 12px 20px;
+        width: 70%;
+        max-width: 280px;
+        text-align: center;
+    }
+}

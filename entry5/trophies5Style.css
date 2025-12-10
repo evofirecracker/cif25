@@ -64,21 +64,121 @@ html, body{
     min-height: 100%;
     flex-direction: column;
     margin: 50px auto 0; /* top margin only affects cabinet container */
-    background-color: #000000;
+    background-color:rgb(68, 26, 0);
     box-sizing: border-box;
+    padding-bottom: 60px;
 }
 
 .header5{
     font-family:'FenulMedium','serif';
     color: #DBA111;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(68, 26, 0);
 }
 
 .cabinet5{
-    margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    width:100%;
+    --gap: 25px;
+    --num-cols: 2;
+    --row-height: 500px;
 
+    box-sizing: border-box;
+    padding: var(--gap);
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: rgb(68, 26, 0); /* color that shows through the grid gap */
+
+}
+
+.cabinet5 > div{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trophy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ucl4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.uel4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+.uecl4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.cwc4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.supercup4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.uefacup4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.pl4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.facup4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.efl4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.communityshield4{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+@media (max-width: 650px){
+    .cabinetcontainer5{
+        width: 90%;
+        margin: 30px auto 0;
+        padding-bottom: 40px;
+    }
+
+    .cabinet5{
+        --num-cols: 1;
+        --row-height: 350px;
+        --gap: 16px;
+    }
 }
